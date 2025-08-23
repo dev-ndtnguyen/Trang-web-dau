@@ -1,0 +1,10 @@
+h1{color:lightblue ; 
+text-align: center}
+h2{color: lightgreen ;
+text-align: center}
+body{background-color: lightcyan}
+p{color:gray}
+header{background-color: lavender}
+footer{background-color: black ; color : white}
+.logo{color:red}
+.slogan{color:hsl(0,40%,40%)}
