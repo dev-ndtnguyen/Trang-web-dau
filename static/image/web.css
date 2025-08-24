@@ -1,10 +1,29 @@
-h1{color:lightblue ; 
-text-align: center}
-h2{color: lightgreen ;
-text-align: center}
-body{background-color: lightcyan}
-p{color:gray}
-header{background-color: lavender}
-footer{background-color: black ; color : white}
-.logo{color:red}
-.slogan{color:hsl(0,40%,40%)}
+footer p {color : gray;
+font-size:10px;
+font-family: Monospace;
+padding: 10px}
+footer{background-color:black;}
+footer a {padding: 10px;
+color: gray;
+font-size: 15px}
+main {background-color:lavender}
+main p{color : black !important;
+text-align: justify}
+footer img{float:right;
+width:300px;
+height:auto}
+footer a:hover{color:green}
+main h1 {font-weight:900 ;
+color : lightgreen;
+font-family: Serif;
+text-align:center}
+nav {text-align: right}
+nav a{color:gray;
+font-family: sans-Serif;
+padding:5px}
+nav a:hover{color:blue}
+header {background-color:#2c2c54}
+main h2{ text-align: center;
+text-decoration: underline}
+header img{max-width:100%;
+height: auto}
