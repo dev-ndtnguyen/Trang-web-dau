@@ -1,0 +1,24 @@
+footer p {color : gray;
+font-size:10px;
+font-family: Monospace;
+padding: 10px}
+footer{background-color:black;}
+footer a {padding: 10px;
+color: gray;
+font-size: 15px}
+footer img{float:right;
+width:180px;
+height:auto}
+footer a:hover{color:green}
+main{background-color: lavender}
+header{background-color: #2c2c54}
+header img{width:100% ;
+height: auto}
+main h1{margin-left:40px;
+font-family: Serif ;
+font-weight: 1100}
+main label{font-weight: 500;
+margin-left:40px}
+main button{margin-left:40px}
+main a:hover{color:blue}
+main a{margin-left:130px}
