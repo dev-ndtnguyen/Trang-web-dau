@@ -11,13 +11,16 @@
 		</header>
 		<hr>
 <main>
-	<h1>Đăng Nhập</h1>
+	<div class="dang_nhap"><h1>Đăng Nhập</h1>
 	<form method="post">
-		<label>tên đăng nhập : </label>
-		<input type="text" name="ten" placeholder="username"><br><br>
-			<label>mật khẩu     : </label>
-		<input type="password" name="mk" placeholder="password"><br><br>
-			<button type="submit" >đăng nhập</button></form><a href="">Đăng ký</a>
+		<label>Tên đăng nhập : </label>
+		<input type="text" name="ten" placeholder="Username">
+			<label>Mật khẩu : </label>
+		<input type="password" name="mk" placeholder="Password">
+			<button type="submit" >Đăng Nhập</button></form>
+			<p><strong>--HOẶC--</strong></p>
+<a href="">Đăng Ký</a>
+			</div>
 </main>
 	<hr>
 			<footer>
@@ -26,7 +29,8 @@
 				<p>©2025</p>
 				<p>liên hệ</p>
 				<p>Email : thaondt4@gmail.com</p>
-				<a href="https://youtube.com/@gamehunter4_o_o_2?si=x_3mxFPOoT1HBcL7">Youtube</a>
+<p class="yt">Youtube <a href="https://youtube.com/@gamehunter4_o_o_2?si=x_3mxFPOoT1HBcL7"><img src="{{url_for("static",filename="image/youtube.jpg")}}"></a></p>
+<p class="fb">Facebook<a href="https://www.facebook.com/nguyen.thao.221436?mibextid=kFxxJD"><img src="{{url_for("static",filename="image/facebook.jpg")}}"></a></p>
 </footer>
 	</body>
 	</html>

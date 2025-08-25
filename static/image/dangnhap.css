@@ -1,5 +1,5 @@
 footer p {color : gray;
-font-size:10px;
+font-size:26px;
 font-family: Monospace;
 padding: 10px}
 footer{background-color:black;}
@@ -14,11 +14,48 @@ main{background-color: lavender}
 header{background-color: #2c2c54}
 header img{width:100% ;
 height: auto}
-main h1{margin-left:40px;
-font-family: Serif ;
-font-weight: 1100}
-main label{font-weight: 500;
-margin-left:40px}
-main button{margin-left:40px}
-main a:hover{color:blue}
-main a{margin-left:130px}
+main .dang_nhap{border: 2px solid #ccc;
+padding:20px;
+width:300px;
+margin:50px;
+background: #f9f9f9;
+margin-left:300px}
+.dang_nhap h1{text-align:center;
+font-width:900;}
+.dang_nhap input{border : 2px solid #ccc ;
+border-radius: 7px;
+width:100%;
+padding:3px}
+.dang_nhap button{margin-left: 90px ;
+background: lightblue;
+width : 100px;
+margin-top:15px;
+padding: 5px;
+border-radius:5px;
+font-size:15px}
+.dang_nhap a{display: inline-block;
+margin-left:90px;
+border: 2px solid black;
+width:74px;
+padding:5px;
+background : lightcoral;
+text-decoration: none;
+padding-left:16px;
+border-radius:5px;
+font-size: 15px;
+color:black}
+.dang_nhap p{margin-left:105px}
+.dang_nhap label{font-family:Serif;
+font-size:10px;
+}
+footer p a{color:gray;
+}
+a img{width:40px;}
+.yt img{width:100px;
+display:flex}
+.yt{display:flex;
+align-items: center}
+p {display:flex;
+align-items:center;
+}
+.fb a img{padding-left:20px}

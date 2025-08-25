@@ -1,11 +1,8 @@
 footer p {color : gray;
-font-size:10px;
+font-size:27px;
 font-family: Monospace;
 padding: 10px}
 footer{background-color:black;}
-footer a {padding: 10px;
-color: gray;
-font-size: 15px}
 main {background-color:lavender}
 main p{color : black !important;
 text-align: justify}
@@ -27,3 +24,14 @@ main h2{ text-align: center;
 text-decoration: underline}
 header img{max-width:100%;
 height: auto}
+footer p a{color:gray;
+}
+a img{width:40px;}
+.yt img{width:100px;
+display:flex}
+.yt{display:flex;
+align-items: center}
+p {display:flex;
+align-items:center;
+}
+.fb a img{padding-left:20px}
