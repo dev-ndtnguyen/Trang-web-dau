@@ -1,37 +1,156 @@
-footer p {color : gray;
+/* css trangchu */
+
+
+.trangchu footer p { color : gray;
 font-size:27px;
 font-family: Monospace;
 padding: 10px}
-footer{background-color:black;}
-main {background-color:lavender}
-main p{color : black !important;
+.trangchu footer{ background-color:black;}
+.trangchu main { background-color:lavender}
+.trangchu main p{color : black !important;
 text-align: justify}
-footer img{float:right;
+.trangchu footer img{float: right;
 width:300px;
 height:auto}
-footer a:hover{color:green}
-main h1 {font-weight:900 ;
+.trangchu footer a:hover{color:green}
+.trangchu main h1 { font-weight:900 ;
 color : lightgreen;
 font-family: Serif;
 text-align:center}
-nav {text-align: right}
-nav a{color:gray;
+.trangchu nav { text-align: right}
+.trangchu nav a{ color:gray;
 font-family: sans-Serif;
 padding:5px}
-nav a:hover{color:blue}
-header {background-color:#2c2c54}
-main h2{ text-align: center;
+.trangchu nav a:hover{color:blue}
+.trangchu header { background-color:#2c2c54}
+.trangchu main h2{ text-align: center;
 text-decoration: underline}
-header img{max-width:100%;
+.trangchu header img{ max-width:100%;
 height: auto}
-footer p a{color:gray;
+.trangchu footer p a{ color:gray;
 }
-a img{width:40px;}
-.yt img{width:100px;
+.trangchu a img{ width:40px;}
+.trangchu .yt img{width:100px;
 display:flex}
-.yt{display:flex;
+.trangchu .yt{display:flex;
 align-items: center}
-p {display:flex;
+.trangchu p { display:flex;
 align-items:center;
 }
-.fb a img{padding-left:20px}
+.trangchu .fb a img{padding-left:20px}
+
+/* css trang đăng nhập */
+
+.dangnhap footer p { color : gray;
+font-size:26px;
+font-family: Monospace;
+padding: 10px}
+.dangnhap footer{ background-color:black;}
+.dangnhap footer a { padding: 10px;
+color: gray;
+font-size: 15px}
+.dangnhap footer img{ float:right;
+width:180px;
+height:auto}
+.dangnhap footer a:hover{color:green}
+.dangnhap main{ background-color: lavender}
+.dangnhap header{ background-color: #2c2c54}
+.dangnhap header img{ width:100% ;
+height: auto}
+.dangnhap main .dang_nhap{border: 2px solid #ccc;
+padding:20px;
+width:300px;
+margin:50px;
+background: #f9f9f9;
+margin-left:300px}
+.dangnhap .dang_nhap h1{text-align:center;
+font-width:900;}
+.dangnhap .dang_nhap input{border : 2px solid #ccc ;
+border-radius: 7px;
+width:100%;
+padding:3px}
+.dangnhap .dang_nhap button{margin-left: 90px ;
+background: lightblue;
+width : 100px;
+margin-top:15px;
+padding: 5px;
+border-radius:5px;
+font-size:15px}
+.dangnhap .dang_nhap a{display: inline-block;
+margin-left:90px;
+border: 2px solid black;
+width:74px;
+padding:5px;
+background : lightcoral;
+text-decoration: none;
+padding-left:16px;
+border-radius:5px;
+font-size: 15px;
+color:black}
+.dangnhap .dang_nhap p{margin-left:90px}
+.dangnhap .dang_nhap label{font-family:Serif;
+font-size:10px;
+}
+.dangnhap footer p a{ color:gray;
+}
+.dangnhap a img{ width:40px;}
+.dangnhap .yt img{width:100px;
+display:flex}
+.dangnhap .yt{display:flex;
+align-items: center}
+.dangnhap p { display:flex;
+align-items:center;
+}
+.dangnhap .fb a img{padding-left:20px}
+main .thong_bao {font-size:25px;
+text-align:center}
+
+/* css đăng ký */
+.dangky footer{background: black;}
+.dangky footer p {color:gray;
+font-width:28px;
+font-family: Monospace;
+padding:10px}
+.dangky footer img{float:right;
+width:180px;
+height: auto}
+.dangky .yt img{width:100px}
+.dangky .fb img{width:40px;
+padding-left:25px}
+.dangky .yt{display: flex;
+align-items: center}
+.dangky .fb{display: flex;
+align-items: center;
+padding-left:5px}
+.dangky .dang_ky{border:2px solid gray;
+width:510px;
+height:500px;
+margin-left: 220px;
+padding:20px;
+border-radius: 18px;
+background:#f9f9f9}
+.dangky .dang_ky h1{text-align:center;
+font-size:50px}
+.dangky .dang_ky label{font-size:35px;}
+.dangky .dang_ky input{width:100%;
+height:35px;
+margin-bottom:30px;
+margin-top:10px;
+border: 3px solid gray;
+border-radius: 10px;
+padding:10px;
+padding-top:15px}
+.dangky .dang_ky button{margin-top:10px;
+width:250px;
+text-align: center;
+margin-left: 120px;
+background: lightblue;
+font-size: 35px;
+padding-bottom:5px;
+padding-top:5px;
+border-radius:8px}
+.dangky input::placeholder{font-size:29px;
+color : darkgray;}
+.dangky main{background:lavender}
+main p {font-size:25px;
+text-align: center}

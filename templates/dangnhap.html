@@ -3,14 +3,17 @@
 		<head>
 			<meta charset="utf-8">
 				<title>trang chủ đăng nhập</title>
-			<link rel="stylesheet" href="{{url_for("static",filename="image/dangnhap.css")}}">
+			<link rel="stylesheet" href="{{url_for("static",filename="image/web.css")}}">
 </head>
-<body>
+<body class ="dangnhap">
 	<header>
 		<img src="{{url_for("static",filename="image/logo.png")}}">
 		</header>
 		<hr>
 <main>
+	{%if thanh_cong%}
+	<p class="thong_bao"> {{thanh_cong}} </p>
+	{%endif%}
 	<div class="dang_nhap"><h1>Đăng Nhập</h1>
 	<form method="post">
 		<label>Tên đăng nhập : </label>
@@ -19,7 +22,7 @@
 		<input type="password" name="mk" placeholder="Password">
 			<button type="submit" >Đăng Nhập</button></form>
 			<p><strong>--HOẶC--</strong></p>
-<a href="">Đăng Ký</a>
+<a href="{{url_for("trang_chu_dang_ky")}}">Đăng Ký</a>
 			</div>
 </main>
 	<hr>
