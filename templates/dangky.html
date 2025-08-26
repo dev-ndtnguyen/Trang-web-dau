@@ -1,0 +1,37 @@
+<!doctype html>
+	<html lang="vi">
+		<head>
+			<meta charset="utf-8">
+				<title>đăng ký tài khoản</title>
+			<link rel="stylesheet" href="{{url_for("static",filename="image/web.css")}}">
+</head>
+<body class="dangky">
+	<header>
+		<img src="{{url_for("static",filename="image/logo.png")}}">
+		</header>
+		<hr>
+<main>
+	{%if that_bai%}
+	<p>{{that_bai}}</p>
+	{%endif%}
+	<div class="dang_ky"><h1>Đăng Ký Tài Khoản</h1>
+	<form method="post">
+		<label>Tên đăng nhập : </label>
+		<input type="text" name="ten" placeholder="Username">
+			<label>Mật khẩu : </label>
+		<input type="password" name="mk" placeholder="Password">
+			<button type="submit" >Đăng Ký</button></form>
+			</div>
+</main>
+	<hr>
+			<footer>
+				<img src="{{url_for("static",filename="image/logo.png")}}">
+				<p>©NDT web developer</p>
+				<p>©2025</p>
+				<p>liên hệ</p>
+				<p>Email : thaondt4@gmail.com</p>
+<p class="yt">Youtube <a href="https://youtube.com/@gamehunter4_o_o_2?si=x_3mxFPOoT1HBcL7"><img src="{{url_for("static",filename="image/youtube.jpg")}}"></a></p>
+<p class="fb">Facebook<a href="https://www.facebook.com/nguyen.thao.221436?mibextid=kFxxJD"><img src="{{url_for("static",filename="image/facebook.jpg")}}"></a></p>
+</footer>
+</body>
+</html>
