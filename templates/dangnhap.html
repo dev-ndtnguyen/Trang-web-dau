@@ -14,8 +14,11 @@
 	{%if thanh_cong%}
 	<p class="thong_bao"> {{thanh_cong}} </p>
 	{%endif%}
+	{%if dang_nhap_that_bai%}
+	<p>{{dang_nhap_that_bai}}</p>
+	{%endif%}
 	<div class="dang_nhap"><h1>Đăng Nhập</h1>
-	<form method="post">
+	<form method="post" action="{{url_for("dang_nhap")}}">
 		<label>Tên đăng nhập : </label>
 		<input type="text" name="ten" placeholder="Username">
 			<label>Mật khẩu : </label>

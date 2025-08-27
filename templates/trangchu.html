@@ -9,13 +9,16 @@
 	<header>
 		<img src="{{url_for("static",filename="image/logo.png")}}">
 		<nav>
-			<a href="{{url_for("trang_chu_dang_ky")}}">Trang Chủ</a>
+			<a href="{{url_for("trang_chu_dang_ky")}}">Đăng ký</a>
 			<br><br><br>
 			<a href="{{url_for("dang_nhap")}}">Đăng nhập</a>
 </nav>
 <hr>
 </header>
 <main>
+	{%if thong_bao_dang_nhap%}
+	<p class="thong_bao">{{ thong_bao_dang_nhap}}</p>
+	{%endif%}
 	<h1><em>Hello Welcome to my website</em></h1>
 		<p>tôi muốn trở thành web developer</p>
 				<h2><em>khởi đầu</em></h2>

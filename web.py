@@ -18,6 +18,12 @@ def trang_chu_dang_ky():
 		username=request.form.get("ten")
 		password=request.form.get("mk")
 		confirm_password=request.form.get("xac_nhan_mat_khau")
+		if not password or not username:
+			viet_trong="Không được để trống thông tin đăng ký"
+			return render_template("dangky.html",viet_trong=viet_trong)
+		if len(password)<8:
+			thieu_mk="Mật khẩu đăng ký phải có 8 ký tự trở lên"
+			return render_template("dangky.html",thieu_mk=thieu_mk)
 		if confirm_password != password:
 			loi_xac_nhan="Mật khẩu xác nhận không giống với mật khẩu bạn đã nhập trước đó"
 			return render_template("dangky.html",loi_xac_nhan=loi_xac_nhan)
@@ -36,6 +42,20 @@ def trang_chu_dang_ky():
 	return render_template("dangky.html")
 @app.route("/dang_nhap",methods=["GET","POST"])
 def dang_nhap():
+	if request.method=="POST":
+		username=request.form.get("ten")
+		password=request.form.get("mk")		
+		ket_noi=sqlite3.connect("dangky.db")
+		ghi=ket_noi.cursor()
+		ghi.execute("SELECT * FROM dang_ky WHERE username=? AND password=? ",(username,password))
+		dang_nhap=ghi.fetchone()
+		ket_noi.close()
+		if dang_nhap:
+			thong_bao_dang_nhap=f"Chào mừng {username} Bạn đã đăng nhập thành công "
+			return render_template("trangchu.html",thong_bao_dang_nhap=thong_bao_dang_nhap)
+		else:
+			dang_nhap_that_bai="Tài khoản mật khẩu không chính xác"
+			return render_template("dangnhap.html",dang_nhap_that_bai=dang_nhap_that_bai)
 	return render_template("dangnhap.html")
 if __name__==("__main__"):
 	app.run()
