@@ -14,12 +14,17 @@
 	{%if that_bai%}
 	<p>{{that_bai}}</p>
 	{%endif%}
+	{% if loi_xac_nhan %}
+	<p>{{ loi_xac_nhan }}</p>
+	{%endif%}
 	<div class="dang_ky"><h1>Đăng Ký Tài Khoản</h1>
 	<form method="post">
 		<label>Tên đăng nhập : </label>
 		<input type="text" name="ten" placeholder="Username">
 			<label>Mật khẩu : </label>
 		<input type="password" name="mk" placeholder="Password">
+			<label>Xác nhận mật khẩu : </label>
+			<input type="password" name="xac_nhan_mat_khau" placeholder="confirm password">
 			<button type="submit" >Đăng Ký</button></form>
 			</div>
 </main>

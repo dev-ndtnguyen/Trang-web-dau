@@ -17,15 +17,19 @@ def trang_chu_dang_ky():
 	if request.method=="POST":
 		username=request.form.get("ten")
 		password=request.form.get("mk")
+		confirm_password=request.form.get("xac_nhan_mat_khau")
+		if confirm_password != password:
+			loi_xac_nhan="Mật khẩu xác nhận không giống với mật khẩu bạn đã nhập trước đó"
+			return render_template("dangky.html",loi_xac_nhan=loi_xac_nhan)
 		try:
 			ket_noi=sqlite3.connect("dangky.db",timeout=15)
 			ghi=ket_noi.cursor()
 			ghi.execute("INSERT INTO dang_ky (username,password) VALUES (?,?)",(username,password))
 			ket_noi.commit()
-			thanh_cong="ban da dang ky thanh cong , ban co the dang nhap tai khoan nay o phia duoi de truy cap trang web"
+			thanh_cong="Bạn đã đăng ký thành công , bạn có thể đăng nhập ở phía dưới để truy cập trang web"
 			return render_template("dangnhap.html",thanh_cong=thanh_cong)
 		except sqlite3.IntegrityError:
-			that_bai="ten tai khoan ban nhap da co nguoi su dung"
+			that_bai="Tên tài khoản bạn nhập đã có người khác sử dụng "
 			return render_template("dangky.html",that_bai=that_bai)
 		finally :
 			ket_noi.close()
